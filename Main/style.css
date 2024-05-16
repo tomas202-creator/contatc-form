@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(#f7f7f7, #eeeeee);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #395da8;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #395da8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #747474;
+    border-radius: 40px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #926a36;
+}
+.contact-inputs::placeholder{
+    color: #afafaf;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 23px;
+    background: linear-gradient(270deg, #395da8, #8d5fc9);
+    cursor: pointer;
+}
+.contact-left button img{
+    padding-left: 0.3vw;
+    height: 15px;
+}
+.contact-right img{
+    width: 700px;
+}
+@media(max-width: 800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+.message{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.message h1{
+    font-size: 2vh;
+    margin-top: 47vh;
+    padding-bottom: 2vh;
+}
+.message a{
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.35vh;
+    background: none;
+    border-radius: 23px;
+    cursor: pointer;
+}
+.message a img{
+    height: 20px;
+    padding-left: 0.3vw;
+}

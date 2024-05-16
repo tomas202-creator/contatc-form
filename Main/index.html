@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <form method="post" action="send-email.php" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>  
+            </div>
+            <input type="text" name="subject" id="subject" placeholder="Subject" class="contact-inputs" required/>
+            <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" id="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/icons8-right-arrow-100.webp" alt=""></button>
+        </form>
+        <div class="contact-right">
+             <img src="assets/the-construction-team-working-on-a-new-project-4325365-3590073.webp" alt="">
+        </div>
+    </div>
+    <?php if (!empty($msg)) {
+        echo "<h2>$msg</h2>";
+    } ?>
+</body>
+</html>
